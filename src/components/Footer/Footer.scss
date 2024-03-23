@@ -1,0 +1,5 @@
+@use '@scssVariables' as v;
+
+.question {
+  color: v.$color-btn;
+}

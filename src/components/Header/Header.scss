@@ -1,0 +1,17 @@
+@use '@scssVariables' as v;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 0.5em;
+  color: v.$color-btn;
+  &__home {
+    padding-right: 0.5em;
+  }
+  &__logout {
+    padding-left: 0.5em;
+    position: relative;
+    cursor: pointer;
+  }
+}

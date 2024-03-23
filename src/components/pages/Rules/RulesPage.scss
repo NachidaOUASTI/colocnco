@@ -1,0 +1,136 @@
+@use '@scssVariables' as v;
+
+.container {
+  // width: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  //background-color: lightblue;
+
+  /*
+  &__nav {
+    position: fixed;
+    left: 1;
+    z-index: 20;
+  }
+  
+  &.menu-closed {
+    .container__content {
+      width: 100%;
+    }
+  }
+  */
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    bottom: 1;
+    margin: 1em;
+    //background-color: rgb(133, 240, 128);
+  }
+
+  &__R {
+    display: flex;
+    flex-direction: column;
+    width: 70em;
+    //background-color: lightcoral;
+
+    &__title {
+      font-size: 2em;
+      text-align: center;
+      padding-top: 1em;
+      &__page {
+        margin: 0.5em 0 0 0;
+        font-size: 1.5em;
+        font-weight: 400;
+      }
+      &__h3 {
+        margin: 0.5em 0 1em 0;
+        font-size: 1em;
+        font-weight: 300;
+        margin: auto;
+        color: v.$color-btn;
+      }
+      &__button {
+        margin: 1em auto;
+        width: 7em;
+        font-size: small;
+        background-color: v.$color-btn;
+        border-radius: 6px;
+        // margin-top: 1em;
+        padding: 0.5em;
+        color: v.$light-color;
+        border-bottom: 3px solid v.$color-text-auth;
+        // text-shadow: 0px -2px #2980b9;
+        // -webkit-transition: all 0.1s;
+        transition: all 0.1s;
+
+        &__icone {
+          padding-left: 0.2em;
+        }
+      }
+      &__button:hover {
+        background-color: v.$color-btn-hover;
+        color: v.$color-text-auth-hover;
+      }
+      &__button:active {
+        -webkit-transform: translate(0px, 5px);
+        transform: translate(0px, 5px);
+        border-bottom: 1px solid;
+      }
+    }
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2em 4em 4em 4em;
+      margin: auto;
+      h3 {
+        text-align: center;
+      }
+      &__form {
+        width: 45em;
+        height: 100vh;
+
+        &__rules {
+          width: 45em;
+          height: 100vh;
+          &__button {
+            background-color: v.$color-btn;
+            width: 6em;
+            padding: 0.5em;
+            border-radius: 4px;
+            color: v.$light-color;
+            margin: 1em auto;
+            text-align: center;
+          }
+          &__button:hover {
+            background-color: v.$color-btn-hover;
+          }
+        }
+      }
+
+      &__link {
+        padding: 3em 6em 3em 6em;
+        background-color: lightgray;
+        margin: 1em;
+        border-radius: 4px;
+        border: 0.5px solid lightgrey;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      padding: 0 0.7em 0.5em 0;
+    }
+  }
+}
